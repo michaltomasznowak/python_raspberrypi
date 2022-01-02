@@ -15,4 +15,4 @@ def init():
     return raspberry_service.test()
 
 
-app.run()
+app.run(host='0.0.0.0')
