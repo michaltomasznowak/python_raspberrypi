@@ -5,7 +5,7 @@ class RaspberryService:
     def __init__(self):
         GPIO.setmode(GPIO.BOARD)
         self.relay_pin = 8
-        GPIO.setup(self.relay_pin, GPIO.IN)
+        GPIO.setup(self.relay_pin, GPIO.OUTPUT)
 
     @property
     def on(self):
