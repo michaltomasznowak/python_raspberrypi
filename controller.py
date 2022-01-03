@@ -13,7 +13,7 @@ raspberry_service = RaspberryService()
 
 @app.route('/api/v1/raspberry/on', methods=['GET'])
 def on():
-    return raspberry_service.on
+    return "Working on pin: " + str(raspberry_service.on)
 
 
 app.run(host='0.0.0.0')
