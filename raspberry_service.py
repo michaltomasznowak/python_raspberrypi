@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 
+
 class RaspberryService:
 
     def __init__(self):
