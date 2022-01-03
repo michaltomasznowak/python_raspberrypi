@@ -14,6 +14,6 @@ class RaspberryService:
         return self.relay_pin
 
     @property
-    def of(self):
+    def off(self):
         GPIO.output(self.relay_pin, GPIO.LOW)
         return self.relay_pin
