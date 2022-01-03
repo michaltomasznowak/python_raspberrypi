@@ -2,10 +2,9 @@ import RPi.GPIO as GPIO
 
 class RaspberryService:
 
-    def __init__(self, name):
+    def __init__(self):
         GPIO.setmode(GPIO.BOARD)
         self.relay_pin = 8
-        self.name = name
         GPIO.setup(self.relay_pin, GPIO.IN)
 
     @property
